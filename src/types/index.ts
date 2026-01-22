@@ -9,3 +9,9 @@ export {
 	TrainerCreationAttributes,
 	TrainerUpdateAttributes,
 } from './trainer.types';
+
+export {
+	VehicleAttributes,
+	VehicleCreationAttributes,
+	VehicleUpdateAttributes,
+} from './vehicle.types';
