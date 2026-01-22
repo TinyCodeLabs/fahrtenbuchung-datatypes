@@ -1,6 +1,5 @@
 {
 	"name": "@tinycodelabs/fahrtenbuchung-datatypes",
-	"scope": "@TinyCodeLabs",
 	"publishConfig": {
 		"registry": "https://npm.pkg.github.com"
 	},
