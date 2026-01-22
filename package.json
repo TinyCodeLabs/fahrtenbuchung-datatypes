@@ -1,0 +1,84 @@
+{
+	"name": "@tinycodelabs/fahrtenbuchung-datatypes",
+	"scope": "@TinyCodeLabs",
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com"
+	},
+	"version": "0.0.1",
+	"description": "Typdefinitionen für Fahrtenbuchungssystem",
+	"keywords": [
+		"types",
+		"typescript",
+		"definitions"
+	],
+	"type": "module",
+	"private": false,
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"types": "./dist/index.d.ts",
+			"default": "./dist/index.js"
+		}
+	},
+	"scripts": {
+		"build": "tsc --project tsconfig.json && tsc-alias -p tsconfig.json",
+		"watch": "tsc --project tsconfig.json --watch",
+		"start": "node dist/index.js",
+		"dev": "tsx watch -r tsconfig-paths/register src",
+		"prepare": "husky",
+		"lint": "eslint --max-warnings=0 .",
+		"lint:staged": "lint-staged",
+		"test": "jest --passWithNoTests"
+	},
+	"engines": {
+		"node": ">=20"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com:TinyCodeLabs/fahrtenbuchung-datatypes.git"
+	},
+	"author": "Tim Gabrikowski",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/TinyCodeLabs/fahrtenbuchung-datatypes/issues"
+	},
+	"homepage": "https://github.com/TinyCodeLabs/fahrtenbuchung-datatypes#readme",
+	"devDependencies": {
+		"@eslint/compat": "^1.3.1",
+		"@eslint/eslintrc": "^3.3.1",
+		"@eslint/js": "^9.31.0",
+		"@types/jest": "^30.0.0",
+		"@types/node": "^24.0.3",
+		"@typescript-eslint/eslint-plugin": "^8.37.0",
+		"@typescript-eslint/parser": "^8.37.0",
+		"eslint": "^9.31.0",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-plugin-import": "^2.32.0",
+		"eslint-plugin-prettier": "^5.5.3",
+		"globals": "^16.3.0",
+		"husky": "^9.1.7",
+		"jest": "^30.0.5",
+		"lint-staged": "^16.1.2",
+		"prettier": "^3.6.2",
+		"ts-jest": "^29.4.0",
+		"tsc-alias": "^1.8.10",
+		"tsconfig-paths": "^4.2.0",
+		"tsx": "^4.20.3",
+		"typescript": "^5.8.3",
+		"typescript-eslint": "^8.37.0"
+	},
+	"lint-staged": {
+		"*.ts": [
+			"prettier --write",
+			"eslint --max-warnings=0 --no-warn-ignored"
+		]
+	},
+	"dependencies": {
+		"zod": "^4.0.13"
+	}
+}

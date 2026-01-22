@@ -1,0 +1,17 @@
+src/
+tsconfig.json
+tsconfig.*.json
+jest.config.js
+eslint.config.mjs
+.eslintrc.*
+.prettierrc
+.prettierignore
+.editorconfig
+.nvmrc
+.husky/
+.vscode/
+.github/
+node_modules/
+coverage/
+test/
+
