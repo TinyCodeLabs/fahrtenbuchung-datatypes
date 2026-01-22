@@ -1,5 +1,9 @@
 name: Generate Release Tag from package.json and Publish to NPM
 
+permissions:
+  contents: read
+  packages: write
+
 on:
   push:
     branches:
