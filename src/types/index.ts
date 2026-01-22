@@ -15,3 +15,4 @@ export {
 	VehicleCreationAttributes,
 	VehicleUpdateAttributes,
 } from './vehicle.types';
+export { SlotAttributes, SlotCreationAttributes, SlotUpdateAttributes } from './slot.types';
