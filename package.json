@@ -3,7 +3,7 @@
 	"publishConfig": {
 		"registry": "https://npm.pkg.github.com"
 	},
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "Typdefinitionen für Fahrtenbuchungssystem",
 	"keywords": [
 		"types",
@@ -31,7 +31,9 @@
 		"dev": "tsx watch -r tsconfig-paths/register src",
 		"prepare": "husky",
 		"lint": "eslint --max-warnings=0 .",
+		"lint:fix": "eslint --max-warnings=0 --fix --no-warn-ignored .",
 		"lint:staged": "lint-staged",
+		"format": "prettier --write src/",
 		"test": "jest --passWithNoTests"
 	},
 	"engines": {
