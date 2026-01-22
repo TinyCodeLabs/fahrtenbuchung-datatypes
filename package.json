@@ -31,7 +31,9 @@
 		"dev": "tsx watch -r tsconfig-paths/register src",
 		"prepare": "husky",
 		"lint": "eslint --max-warnings=0 .",
+		"lint:fix": "eslint --max-warnings=0 --fix --no-warn-ignored .",
 		"lint:staged": "lint-staged",
+		"format": "prettier --write src/",
 		"test": "jest --passWithNoTests"
 	},
 	"engines": {
