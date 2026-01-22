@@ -1,1 +1,11 @@
-export const b = 2;
+export {
+	TraineeAttributes,
+	TraineeCreationAttributes,
+	TraineeUpdateAttributes,
+} from './trainee.types';
+
+export {
+	TrainerAttributes,
+	TrainerCreationAttributes,
+	TrainerUpdateAttributes,
+} from './trainer.types';

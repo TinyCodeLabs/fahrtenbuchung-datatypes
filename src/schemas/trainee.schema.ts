@@ -4,7 +4,6 @@ export const TraineeSchema = z.object({
 	id: z.uuid(),
 	name: z.string(),
 	lastname: z.string(),
-	email: z.email(),
 });
 
 export const TraineeCreationSchema = TraineeSchema.omit({ id: true });
