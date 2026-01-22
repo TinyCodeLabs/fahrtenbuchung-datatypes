@@ -8,6 +8,7 @@ export const TourStatusSchema = z.enum(['pending', 'booked', 'done']);
 export const TourSchema = z.object({
 	id: z.uuid(),
 	status: TourStatusSchema,
+	//references:
 	slotId: z.uuid(),
 	slot: SlotSchema,
 	vehicleId: z.uuid(),
