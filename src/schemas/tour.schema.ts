@@ -10,7 +10,7 @@ export const TourSchema = z.object({
 	status: TourStatusSchema,
 	//references:
 	slotId: z.uuid(),
-	slot: SlotSchema,
+	slot: SlotSchema.optional(),
 	vehicleId: z.uuid(),
 	vehicle: VehicleSchema.optional(),
 	trainerId: z.uuid(),
