@@ -1,6 +1,5 @@
-import { TraineeSchema } from 'schemas';
 import * as z from 'zod';
-import { TrainerSchema } from './trainer.schema';
+
 import { VehicleSchema } from './vehicle.schema';
 
 export const SlotSchema = z.object({
@@ -9,10 +8,6 @@ export const SlotSchema = z.object({
 	//references:
 	vehicleId: z.uuid(),
 	vehicle: VehicleSchema.optional(),
-	trainerId: z.uuid(),
-	trainer: TrainerSchema.optional(),
-	traineeId: z.uuid(),
-	trainee: TraineeSchema.optional(),
 });
 
 export const SlotCreationSchema = SlotSchema.omit({ id: true });
