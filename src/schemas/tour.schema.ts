@@ -1,6 +1,5 @@
-import { SlotSchema, TraineeSchema } from 'schemas';
+import { SlotSchema, UserSchema } from 'schemas';
 import * as z from 'zod';
-import { TrainerSchema } from './trainer.schema';
 import { VehicleSchema } from './vehicle.schema';
 
 export const TourStatusSchema = z.enum(['pending', 'booked', 'done']);
@@ -13,10 +12,8 @@ export const TourSchema = z.object({
 	slot: SlotSchema.optional(),
 	vehicleId: z.uuid(),
 	vehicle: VehicleSchema.optional(),
-	trainerId: z.uuid(),
-	trainer: TrainerSchema.optional(),
-	traineeId: z.uuid(),
-	trainee: TraineeSchema.optional(),
+	userId: z.uuid(),
+	user: UserSchema.optional(),
 });
 
 export const TourCreationSchema = TourSchema.omit({ id: true });
