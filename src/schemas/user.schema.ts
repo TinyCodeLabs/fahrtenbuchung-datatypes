@@ -12,4 +12,7 @@ export const UserSchema = z.object({
 
 export const UserSafeSchema = UserSchema.omit({ password_hash: true });
 export const UserCreationSchema = UserSchema.omit({ id: true });
+export const UserCreationPasswordSchema = UserCreationSchema.omit({ password_hash: true }).extend({
+	password: z.string(),
+});
 export const UserUpdateSchema = UserSchema.partial().required({ id: true });

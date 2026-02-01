@@ -1,6 +1,7 @@
 export {
 	UserAttributes,
 	UserCreationAttributes,
+	UserCreationPasswordAttributes,
 	UserUpdateAttributes,
 	UserSafe,
 	UserRole,

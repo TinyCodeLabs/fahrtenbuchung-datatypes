@@ -2,6 +2,7 @@ export {
 	UserSchema,
 	UserSafeSchema,
 	UserCreationSchema,
+	UserCreationPasswordSchema,
 	UserUpdateSchema,
 	UserRoleSchema,
 } from './user.schema';
